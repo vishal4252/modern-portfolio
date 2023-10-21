@@ -33,7 +33,7 @@ main #hero-sec {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
+    
 }
 
 main #hero-sec h4 {
@@ -67,7 +67,7 @@ main #hero-sec h1:hover {
 main #about-sec {
     background-color: #000;
     color: #fff;
-    overflow: hidden;
+    
     position: relative;
 }
 
@@ -88,7 +88,7 @@ main #about-sec p {
 }
 
 main #project-sec {
-    overflow: hidden;
+   
 }
 
 main #project-sec h4 {
@@ -112,7 +112,7 @@ main #project-sec .projects .projects-img {
     width: 350px;
     height: 550px;
     position: relative;
-    overflow: hidden;
+    
 }
 
 main #project-sec .projects .projects-img img {
