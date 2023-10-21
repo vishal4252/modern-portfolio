@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+body {
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+}
+
+nav a {
+    letter-spacing: 2px;
+}
+
+main #hero-sec {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+main #hero-sec h4 {
+    width: fit-content;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 8px;
+    font-size: 5vw;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+main #hero-sec h1 {
+    width: fit-content;
+    letter-spacing: 2px;
+    font-size: 11vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+main #hero-sec h4:hover {
+    color: #000;
+}
+
+main #hero-sec h1:hover {
+    color: #000;
+}
+
+main #about-sec {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+main #about-sec h4 {
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: 8px;
+    font-size: 5vw;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+main #about-sec p {
+    text-align: justify;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 10rem;
+}
+
+main #project-sec {
+    overflow: hidden;
+}
+
+main #project-sec h4 {
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 8px;
+    font-size: 5vw;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+main #project-sec .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    grid-gap: 10px;
+    position: relative;
+}
+
+main #project-sec .projects .projects-img {
+    width: 350px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+main #project-sec .projects .projects-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main #project-sec .projects-img .projects-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 2.5rem;
+    background-color: #b1adadb8;
+    border-radius: 100px;
+}
+
+main #contact-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+main #contact-sec .contact-left {
+    flex-basis: 50%;
+}
+
+main #contact-sec .contact-left img {
+    object-fit: cover;
+    object-position: center;
+}
+
+main #contact-sec .contact-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+main #contact-sec .contact-right h4 {
+    font-weight: 700;
+    letter-spacing: 8px;
+    font-size: 5vw;
+    color: #000;
+}
+
+main #contact-sec .contact-right .contact-form {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+main #contact-sec .contact-right .contact-form input {
+    width: 35rem;
+    border-radius: 0;
+    padding: 0.5rem;
+    border: 2px solid #000;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+main #contact-sec .contact-right .contact-form button {
+    padding: 0.6rem 3.2rem;
+    border: 2px solid #000;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media(max-width:768px) {
+    main #hero-sec {
+        height: 60vh;
+    }
+
+    main #hero-sec h4 {
+        font-size: 10vw;
+    }
+
+    main #hero-sec h1 {
+        font-size: 13vw;
+    }
+
+    main #about-sec h4 {
+        font-weight: 500;
+        font-size: 10vw;
+    }
+
+    main #about-sec p {
+        font-size: 16px;
+    }
+
+    main #project-sec h4 {
+        font-weight: 700;
+        letter-spacing: 4px;
+        font-size: 10vw;
+    }
+
+    main #contact-sec .contact-left {
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    main #contact-sec .contact-right {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main #contact-sec .contact-right h4 {
+        font-size: 10vw;
+        text-align: right;
+    }
+
+    main #contact-sec .contact-right .contact-form input {
+        width: 21rem;
+        padding: 0.5rem;
+    }
+
+    main #contact-sec .contact-right .contact-form button {
+        padding: 0.5rem 2rem;
+    }
+}
